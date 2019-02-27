@@ -1,0 +1,64 @@
+<template>
+  <div class="h">
+    <div class="hl">
+      <div class="iconfont back-icon">&#xe624;</div>
+    </div>
+    <div class="hi">
+      <span class="iconfont">&#xe632;</span>
+      输入城市/景点/游玩主题
+    </div>
+    <div class="hr">
+      城市
+      <span class="iconfont arrow-icon">&#xe64a;</span>
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        name: 'HomeHeader'
+    }
+</script>
+
+<style lang="stylus" scoped>
+    @import '~styles/varibles.styl';
+    .h {
+        line-height: $headerHeight;
+        background: $bgColor;
+        color: #fff;
+        display: flex
+    }
+    
+    .h .hl {
+        width: .64rem;
+        float: left;
+    }
+    
+    .h .hl .back-icon {
+        text-align: center;
+        font-size: .4rem;
+    }
+    
+    .h .hi {
+        height: .64rem;
+        line-height: .64rem;
+        margin-top: .12rem;
+        margin-left: .2rem;
+        padding-left: .2rem;
+        background: #fff;
+        border-radius: .1rem;
+        color: #ccc;
+        flex: 1;
+    }
+    
+    .h .hr {
+        width: 1.24rem;
+        float: right;
+        text-align: center
+    }
+    
+    .h .hr .arrow-icon {
+        margin-left: -.04rem;
+        font-size: .24rem
+    }
+</style>
