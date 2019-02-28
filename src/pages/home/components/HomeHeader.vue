@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题
     </div>
     <div class="hr">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
@@ -16,15 +16,17 @@
 
 <script>
     export default {
-        name: 'HomeHeader'
+        name: 'HomeHeader',
+        props: ['city']
     }
 </script>
 
 <style lang="stylus" scoped>
-    @import '~styles/varibles.styl';
+    /* @import '~styles/varibles.styl'; */
+    
     .h {
-        line-height: $headerHeight;
-        background: $bgColor;
+        line-height: .86rem;
+        background: #00bcd4;
         color: #fff;
         display: flex
     }
